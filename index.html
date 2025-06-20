@@ -1,96 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tomasz Sopel's Personal Site</title>
+    <title>Tomasz Sopel - Backend Python Developer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc; /* Tailwind's gray-50 */
+        }
+        .section-title {
+            border-bottom: 2px solid #e2e8f0; /* Tailwind's gray-200 */
+        }
+    </style>
 </head>
+<body class="text-slate-800">
 
-<body>
-    <table cellspacing="20">
-        <tr>
-            <td><img src="images/profilepic-circle.png" alt="Tomasz Profile Picture"></td>
-            <td>
-                <h1>Tomasz Sopel</h1>
-                <p><em>Software Engineer and Avid Traveler.</em></p>
-                <p>EMT turned programmer, I am honing my skills to write clean and modular code for the 21st century.
-                <p>CEO of <strong><a href="https://www.youtube.com/channel/UCNnvWgibM7dHQxEWsri_yKA">As I Wander
-                            Productions</a></strong> </p>
-            </td>
-        </tr>
-    </table>
-    <hr>
-    <h3>Education</h3>
-    <p>
-    <ul>
-        <li>Bachelor's of Science in Physiology and Neurobiology with Psychology Minor</li>
-        <ul>
-            <li>Studied Physiology and Neurobiology</li>
-        </ul>
-        <li>Bachelor's of Science in Molecular and Cell Biology</li>
-        <ul>
-            <li>Studied Molecular and Cell Biology</li>
-        </ul>
-    </ul>
-    </p>
-    <hr>
-    <h3>Work Experience</h3>
-    <table>
-        <thead>
-            <tr>
-                <th>Dates</th>
-                <th>Work</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>2015-Present</td>
-                <td>EMT at Aetna Ambulance</td>
-            </tr>
-            <tr>
-                <td>2013-2015</td>
-                <td>Uconn Transportation Services</td>
-            </tr>
-        </tbody>
+    <!-- Main Container -->
+    <div class="container mx-auto max-w-4xl p-4 sm:p-6 lg:p-8">
 
-    </table>
-    <hr>
-    <h3>
-        Skills
-    </h3>
-    <table>
-        <tr>
-            <td>
-                <table cellspacing="10">
-                    <tr>
-                        <td>Python</td>
-                        <td>⭐⭐⭐⭐⭐</td>
-                    </tr>
-                    <tr>
-                        <td>HTML</td>
-                        <td>⭐⭐⭐</td>
-                    </tr>
-                </table>
-            </td>
-            <td>
-                <table cellspacing="10">
-                <tr>
-                    <td>Pandas</td>
-                    <td>⭐⭐</td>
-                </tr>
-                <tr>
-                    <td>CSS</td>
-                    <td>⭐</td>
-                </tr>
-            </table>
-            </td>
-        </tr>
-    </table>
-    <hr>
-    <a href="hobbies.html">My Hobbies</a>
-    <a href="contact_me.html">Contact Me</a>
+        <!-- Header Section -->
+        <header class="text-center mb-10">
+            <h1 class="text-4xl sm:text-5xl font-bold text-slate-900">Tomasz Sopel</h1>
+            <p class="text-lg sm:text-xl text-sky-600 mt-2">Backend Python Developer</p>
+            
+            <!-- Contact Information with Icons -->
+            <div class="flex justify-center items-center flex-wrap gap-x-6 gap-y-2 mt-4 text-slate-600">
+                <a href="mailto:Tomasz.j.Sopel@gmail.com" class="hover:text-sky-600 transition-colors duration-300 flex items-center gap-2">
+                    <i class="fas fa-envelope"></i> Tomasz.j.Sopel@gmail.com
+                </a>
+                <a href="https://github.com/TomaszSopel" target="_blank" rel="noopener noreferrer" class="hover:text-sky-600 transition-colors duration-300 flex items-center gap-2">
+                    <i class="fab fa-github"></i> github.com/TomaszSopel
+                </a>
+                <span class="flex items-center gap-2">
+                    <i class="fas fa-map-marker-alt"></i> New Britain, CT
+                </span>
+            </div>
+        </header>
+
+        <!-- Main Content Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+
+            <!-- Left Column -->
+            <div class="md:col-span-2 space-y-10">
+
+                <!-- Professional Summary Section -->
+                <section>
+                    <h2 class="text-2xl font-bold text-slate-900 pb-2 mb-4 section-title">Professional Summary</h2>
+                    <p class="text-slate-700 leading-relaxed">
+                        Self-motivated Backend Developer with a strong foundation in Python, PostgreSQL, and Flask, transitioning from a decorated background in emergency medical services. Proven ability to solve complex problems and maintain composure in high-pressure, dynamic environments. Eager to apply robust analytical skills—honed through dual degrees in biology and a career in emergency medicine—to build scalable, maintainable, and impactful software solutions.
+                    </p>
+                </section>
+                
+                <!-- Projects Section -->
+                <section>
+                    <h2 class="text-2xl font-bold text-slate-900 pb-2 mb-4 section-title">Projects</h2>
+                    <div class="space-y-6">
+                        <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
+                            <h3 class="text-xl font-bold text-slate-800">Take A Hike — SMS Event Alert System</h3>
+                            <a href="https://github.com/TomaszSopel/take-a-hike" target="_blank" rel="noopener noreferrer" class="text-sky-600 hover:underline inline-block mb-3">
+                                View on GitHub <i class="fas fa-external-link-alt text-xs ml-1"></i>
+                            </a>
+                            <p class="text-slate-600 mb-4">
+                                A backend application designed to solve a critical communication gap for a non-profit serving an elderly demographic, allowing administrators to instantly notify clients of event updates via SMS.
+                            </p>
+                            <ul class="list-disc list-inside space-y-2 text-slate-700">
+                                <li>Architected a backend service using <strong>Python</strong> and <strong>Flask</strong>, employing <strong>Object-Oriented</strong> principles for maintainability.</li>
+                                <li>Designed and managed a <strong>PostgreSQL</strong> database, writing raw SQL queries for precise data manipulation.</li>
+                                <li>Integrated the <strong>Twilio API</strong> for all SMS functionalities, including user registration and broadcast alerts.</li>
+                                <li>Ensured code quality by implementing comprehensive <strong>unit tests</strong> and adopting a <strong>CI/CD</strong> pipeline.</li>
+                                <li>Managed the project with <strong>Git</strong> for version control, maintaining a clean and descriptive commit history.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Professional Experience Section -->
+                <section>
+                    <h2 class="text-2xl font-bold text-slate-900 pb-2 mb-4 section-title">Professional Experience</h2>
+                    <div class="space-y-2">
+                         <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
+                            <h3 class="text-xl font-bold text-slate-800">Emergency Medical Technician</h3>
+                            <p class="text-slate-600 font-medium">Aetna Ambulance Services | Hartford, CT</p>
+                            <p class="text-slate-500 text-sm mb-3">August 2015 – Present</p>
+                            <ul class="list-disc list-inside space-y-2 text-slate-700">
+                                <li>Demonstrated critical problem-solving in fast-paced emergency settings to achieve optimal patient outcomes.</li>
+                                <li>Managed sensitive situations with clear, concise communication, collaborating effectively with diverse teams.</li>
+                                <li>Maintained meticulous documentation and records, ensuring accuracy and unwavering attention to detail under pressure.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <!-- Right Column (Sidebar) -->
+            <div class="space-y-10">
+                <!-- Skills Section -->
+                <section>
+                    <h2 class="text-2xl font-bold text-slate-900 pb-2 mb-4 section-title">Skills</h2>
+                    <div class="space-y-4">
+                        <div>
+                            <h3 class="font-bold text-slate-800 mb-2">Languages</h3>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-sky-100 text-sky-800 text-sm font-medium px-3 py-1 rounded-full">Python</span>
+                                <span class="bg-sky-100 text-sky-800 text-sm font-medium px-3 py-1 rounded-full">SQL</span>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-slate-800 mb-2">Backend & Databases</h3>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-sky-100 text-sky-800 text-sm font-medium px-3 py-1 rounded-full">Flask</span>
+                                <span class="bg-sky-100 text-sky-800 text-sm font-medium px-3 py-1 rounded-full">PostgreSQL</span>
+                                <span class="bg-sky-100 text-sky-800 text-sm font-medium px-3 py-1 rounded-full">RESTful APIs</span>
+                            </div>
+                        </div>
+                         <div>
+                            <h3 class="font-bold text-slate-800 mb-2">Developer Tools</h3>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-sky-100 text-sky-800 text-sm font-medium px-3 py-1 rounded-full">Git</span>
+                                <span class="bg-sky-100 text-sky-800 text-sm font-medium px-3 py-1 rounded-full">GitHub</span>
+                                <span class="bg-sky-100 text-sky-800 text-sm font-medium px-3 py-1 rounded-full">CI/CD</span>
+                                <span class="bg-sky-100 text-sky-800 text-sm font-medium px-3 py-1 rounded-full">Containerization</span>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-slate-800 mb-2">Testing & Methodologies</h3>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-sky-100 text-sky-800 text-sm font-medium px-3 py-1 rounded-full">Unit Testing</span>
+                                <span class="bg-sky-100 text-sky-800 text-sm font-medium px-3 py-1 rounded-full">OOP</span>
+                                <span class="bg-sky-100 text-sky-800 text-sm font-medium px-3 py-1 rounded-full">Modular Code</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Education Section -->
+                <section>
+                    <h2 class="text-2xl font-bold text-slate-900 pb-2 mb-4 section-title">Education</h2>
+                    <div class="space-y-4">
+                        <div class="bg-white p-4 rounded-lg shadow-sm border border-gray-200">
+                             <h3 class="font-bold text-slate-800">University of Connecticut</h3>
+                             <p class="text-slate-600">B.S. Physiology & Neurobiology</p>
+                             <p class="text-slate-600">B.S. Molecular & Cell Biology</p>
+                             <p class="text-slate-500 text-sm mt-1">2013 – 2017</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
 </body>
-
 </html>
